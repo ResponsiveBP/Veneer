@@ -1,0 +1,18 @@
+﻿.alert {
+    background-color: $amber;
+    border: none;
+    border-left: 5px solid $amber-deep;
+    color: darken($amber, 70);
+}
+
+.alert.error {
+    border-left: 5px solid $red-deep;
+}
+
+.alert.success {
+    border-left: 5px solid $green-deep;
+}
+
+.alert.info {
+    border-left: 5px solid $blue-deep;
+}
