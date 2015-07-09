@@ -1,18 +1,22 @@
 ﻿.alert {
     background-color: $amber;
     border: none;
-    border-left: 5px solid $amber-deep;
+    border-left: $alert-border-width solid $amber-deep;
     color: darken($amber, 70);
+
+    & > .close {
+        box-shadow: none;
+    }
 }
 
 .alert.error {
-    border-left: 5px solid $red-deep;
+    border-left: $alert-border-width solid $red-deep;
 }
 
 .alert.success {
-    border-left: 5px solid $green-deep;
+    border-left: $alert-border-width solid $green-deep;
 }
 
 .alert.info {
-    border-left: 5px solid $blue-deep;
+    border-left: $alert-border-width solid $blue-deep;
 }

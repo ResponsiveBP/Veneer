@@ -1,8 +1,18 @@
 ﻿// General Styles
 $base-font-family: Roboto, "Segoe UI", Helvetica, Arial, Sans-Serif!default;
 
+// Focused objects
+$selection-focus-color: #e91e63!default;
+$selection-focus-style: solid!default;
+$selection-focus-width: 2px!default;
+$selection-focus-offset: -2px !default;
+
 // Shadows
 $box-shadow: 0 2px 5px rgba(0,0,0,.26)!default;
+
+%box-shadow {
+    box-shadow: $box-shadow;
+}
 
 // Colors
 $red: #e51c23!default;
@@ -11,7 +21,21 @@ $green: #259b24!default;
 $green-deep: #0d5302!default;
 $amber: #ffc107!default;
 $amber-deep: #ff6f00!default;
-$blue: #5677fc!default;
+$blue: #4367fc!default;
 $blue-deep: #2a36b1!default;
 $pink: #e91e63!default;
 $pink-deep: #880e4f!default;
+
+// Alerts
+$alert-border-width: 5px!default;
+
+// Forms
+$form-input-padding: .25rem !default;
+$form-supplement-background: #4367fc !default;
+$form-supplement-color: #fff !default;
+
+// Buttons
+$button-background: #4367fc !default;
+$button-color: #fff;
+$button-border: none;
+$button-border-radius: 2px;

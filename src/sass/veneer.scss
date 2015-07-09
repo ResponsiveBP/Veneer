@@ -2,8 +2,10 @@
 @import "utilities/variables";
 
 // Base Styles
+@import "partials/base";
+@import "partials/forms";
+@import "partials/buttons";
+@import "partials/code";
 @import "partials/typography";
 @import "partials/alerts";
 @import "partials/status";
-
-

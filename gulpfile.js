@@ -28,14 +28,17 @@ var sassSrc = path.sass.src + "veneer.scss";
 
 // Concatenate & Minify SCSS
 gulp.task("sass", function (cb) {
-    gulp.src(sassSrc)
-        .pipe(plugins.rubySass({ unixNewlines: true, precision: 4, noCache: true }))
-        .pipe(plugins.autoprefixer("last 2 version", "> 1%", "ie 8", { cascade: true }))
-        .pipe(gulp.dest(path.sass.build))
-        .pipe(plugins.rename({ suffix: ".min" }))
-        .pipe(plugins.minifyCss())
-        .pipe(gulp.dest(path.sass.build))
-        .on("end", cb);
+     plugins.rubySass(sassSrc, { unixNewlines: true, precision: 4, noCache: true })
+            .pipe(plugins.autoprefixer({
+                browsers: ["> 1%", "last 2 versions", "ie 9"],
+                cascade: true,
+                remove: false
+            }))
+           .pipe(gulp.dest(path.sass.build))
+           .pipe(plugins.rename({ suffix: ".min" }))
+           .pipe(plugins.minifyCss())
+           .pipe(gulp.dest(path.sass.build))
+           .on("end", cb);
 });
 
 gulp.task("clean", ["sass"], function (cb) {

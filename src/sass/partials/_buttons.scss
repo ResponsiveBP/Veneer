@@ -1,0 +1,54 @@
+﻿button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    @extend %box-shadow;
+    background-color: $button-background;
+    color: $button-color;
+    border: $button-border;
+    border-radius: $button-border-radius;
+
+    &:hover {
+        background-color: darken($button-background, 5);
+    }
+
+    &:active {
+        background-color: lighten($button-background, 5);
+    }
+
+    &[disabled] {
+        background-color: lighten($button-background, 5);
+    }
+
+    .btn-group > & {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+// Remove borders when joined to inputs
+html:not([dir=rtl]) .input-group-addon:first-child > * {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+html:not([dir=rtl]) .input-group-addon:last-child > * {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+[dir=rtl] .input-group-addon:first-child > * {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+[dir=rtl] .input-group-addon:last-child > * {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group {
+    @extend %box-shadow;
+    border-radius: $button-border-radius;
+    overflow: hidden;
+}
