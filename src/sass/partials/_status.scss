@@ -1,6 +1,10 @@
 ﻿.error {
     background-color: $red;
     color: lighten($red, 70);
+
+    &:focus {
+        outline-color: $selection-focus-color-alt;
+    }
 }
 
 .success {

@@ -64,4 +64,9 @@ _::-ms-reveal, select {
     background: $form-supplement-background;
     border-color: $form-supplement-background;
     color: $form-supplement-color;
+
+    _::-ms-reveal,
+    & > input[type='radio'] {
+        background-color: $form-supplement-background;
+    }
 }

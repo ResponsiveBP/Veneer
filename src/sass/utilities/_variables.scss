@@ -3,28 +3,45 @@ $base-font-family: Roboto, "Segoe UI", Helvetica, Arial, Sans-Serif!default;
 
 // Focused objects
 $selection-focus-color: #e91e63!default;
+$selection-focus-color-alt: #fff!default;
 $selection-focus-style: solid!default;
 $selection-focus-width: 2px!default;
 $selection-focus-offset: -2px !default;
 
 // Shadows
 $box-shadow: 0 2px 5px rgba(0,0,0,.26)!default;
+$box-shadow-light: 0 2px 5px rgba(0,0,0,.13)!default;
 
 %box-shadow {
     box-shadow: $box-shadow;
 }
 
+%box-shadow-light {
+    box-shadow: $box-shadow-light;
+}
+
+// Border-radius
+$border-radius: 2px;
+
+%border-radius {
+    border-radius: $border-radius;
+}
+
 // Colors
-$red: #e51c23!default;
+$red: #e62333!default;
 $red-deep: #b0120a!default;
-$green: #259b24!default;
+$green: #21881F!default;
 $green-deep: #0d5302!default;
-$amber: #ffc107!default;
+$amber: #ffd54f!default;
 $amber-deep: #ff6f00!default;
 $blue: #4367fc!default;
 $blue-deep: #2a36b1!default;
 $pink: #e91e63!default;
 $pink-deep: #880e4f!default;
+
+//==
+// Basic Elements
+//##
 
 // Alerts
 $alert-border-width: 5px!default;
@@ -38,4 +55,11 @@ $form-supplement-color: #fff !default;
 $button-background: #4367fc !default;
 $button-color: #fff;
 $button-border: none;
-$button-border-radius: 2px;
+
+// Code
+$code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace, monospace !default;
+$code-background-color: #23241f !default;
+$code-border-color: #c0c0c0 !default;
+$code-color: #f8f8f2 !default;
+$code-background-color-alt: #f7f7f9 !default;
+$code-color-alt: #950b2f !default;

@@ -11,6 +11,10 @@
 
 .alert.error {
     border-left: $alert-border-width solid $red-deep;
+
+    & > .close:focus {
+        outline-color: $selection-focus-color-alt;
+    }
 }
 
 .alert.success {

@@ -3,10 +3,10 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
     @extend %box-shadow;
+    @extend %border-radius;
     background-color: $button-background;
     color: $button-color;
     border: $button-border;
-    border-radius: $button-border-radius;
 
     &:hover {
         background-color: darken($button-background, 5);
@@ -18,6 +18,39 @@ input[type="reset"] {
 
     &[disabled] {
         background-color: lighten($button-background, 5);
+    }
+
+
+    &.error {
+        background-color: $red;
+
+        &:hover {
+            background-color: darken($red, 5);
+        }
+
+        &:active {
+            background-color: lighten($red, 5);
+        }
+
+        &[disabled] {
+            background-color: lighten($red, 5);
+        }
+    }
+
+    &.success {
+        background-color: $green;
+
+        &:hover {
+            background-color: darken($green, 5);
+        }
+
+        &:active {
+            background-color: lighten($green, 5);
+        }
+
+        &[disabled] {
+            background-color: lighten($green, 5);
+        }
     }
 
     .btn-group > & {
@@ -49,6 +82,6 @@ html:not([dir=rtl]) .input-group-addon:last-child > * {
 
 .btn-group {
     @extend %box-shadow;
-    border-radius: $button-border-radius;
+    @extend %border-radius;
     overflow: hidden;
 }
