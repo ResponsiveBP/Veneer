@@ -1,8 +1,4 @@
 ﻿// Select
-%select {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMC41Ij48cG9seWdvbiBmaWxsPSIjMjIyIiBwb2ludHM9IjExLDAgNS41LDkgMCwwIi8+PC9zdmc+');
-}
-
 // 1. Strip default appearence
 // 2. Add a select indicator
 // 3. Remove for multiple
@@ -10,7 +6,7 @@
 // 5. Hide the arrow in IE10+
 select {
     appearance: none; // 1
-    @extend %select; // 2
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMC41Ij48cG9seWdvbiBmaWxsPSIjMjIyIiBwb2ludHM9IjExLDAgNS41LDkgMCwwIi8+PC9zdmc+'); // 2
     background-repeat: no-repeat;
     background-position: right .6rem center;
     padding-right: 1.67rem;
@@ -50,7 +46,7 @@ select {
 
 // 1: Re-add styles. TODO: Find better way.
 _::-ms-reveal, select {
-    @extend %select; // 1
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMC41Ij48cG9seWdvbiBmaWxsPSIjMjIyIiBwb2ludHM9IjExLDAgNS41LDkgMCwwIi8+PC9zdmc+'); // 1
     padding-right: 1.67rem;
 
     [dir=rtl] & {

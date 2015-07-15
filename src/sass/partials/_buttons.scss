@@ -59,6 +59,32 @@ input[type="reset"] {
     }
 }
 
+.btn-group {
+    @extend %box-shadow;
+    @extend %border-radius;
+}
+
+// Remove borders when grouped
+html:not([dir=rtl]) .btn-group > :first-child {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+html:not([dir=rtl]) .btn-group > :last-child {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+[dir=rtl] .btn-group > :first-child {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+[dir=rtl] .btn-group > :last-child {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
 // Remove borders when joined to inputs
 html:not([dir=rtl]) .input-group-addon:first-child > * {
     border-top-right-radius: 0;
@@ -71,17 +97,11 @@ html:not([dir=rtl]) .input-group-addon:last-child > * {
 }
 
 [dir=rtl] .input-group-addon:first-child > * {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-[dir=rtl] .input-group-addon:last-child > * {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.btn-group {
-    @extend %box-shadow;
-    @extend %border-radius;
-    overflow: hidden;
+[dir=rtl] .input-group-addon:last-child > * {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }

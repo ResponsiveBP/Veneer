@@ -7,3 +7,11 @@ blockquote {
     margin-left: 0;
     padding-left: 1.25rem;
 }
+
+[dir=rtl] blockquote {
+    border-left: none;
+    border-right: $alert-border-width solid $blue-deep;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 1.25rem;
+}
