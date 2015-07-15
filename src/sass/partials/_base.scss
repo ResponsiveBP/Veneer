@@ -1,8 +1,0 @@
-﻿// Set focus on elements that can recieve it.
-// http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex
-:focus {
-    outline: $selection-focus-color;
-    outline-style: $selection-focus-style;
-    outline-width: $selection-focus-width;
-    outline-offset: $selection-focus-offset;
-}
