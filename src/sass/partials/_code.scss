@@ -3,7 +3,8 @@
     font-family: $code-font-family;
 }
 
-pre, kbd {
+pre, kbd,
+code > kbd {
     @extend %box-shadow;
     background-color: $code-background-color;
     color: $code-color;

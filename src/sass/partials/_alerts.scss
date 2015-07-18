@@ -3,7 +3,7 @@
     border: none;
     border-left: $alert-border-width solid $amber-deep;
     color: darken($amber, 70);
-
+    
     & > .close {
         box-shadow: none;
     }
